@@ -1,0 +1,26 @@
+/* labels too small on daisyui theme. contrast already bad */
+/* moved here because it stopped working in form-extras.css */
+.label-text {
+    font-size: 1.4rem;
+}
+
+/* some icons don't show under daisyui theme so forcing default col */
+.svg-inline--fa {
+    color: black;
+}
+
+/* tooltip text */
+.tooltip:before {
+  font-size: 1.1rem;
+  /* increase font size */
+  line-height: 1.4;
+  padding: 0.75rem 1rem;
+  /* more breathing room */
+}
+
+/* animation used for the loader */
+@keyframes loader-spin {
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
