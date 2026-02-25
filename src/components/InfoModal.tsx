@@ -43,7 +43,7 @@ const InfoModal = ({isOpen, setIsOpen}:InfoModalInterface) => {
                             <DialogTitle className="font-bold">EPSM Info</DialogTitle>
                             <Description>EPSM helps you generate 'pack.yml' files for Edgeware++</Description>
                             <Description><b>All data is processed on your computer and never leaves your device</b></Description>
-                            <p>See the <a target="blank" href="https://duckduckgo.com"><b>project Github</b></a> to learn more about the project and how to use it</p>
+                            <p>See the <a target="blank" href="https://github.com/dabberoo/epsm"><b>project Github</b></a> to learn more about the project and how to use it</p>
                             <div className="flex gap-4">
                                 <button onClick={() => setIsOpen(false)}>Close</button>
                             </div>
