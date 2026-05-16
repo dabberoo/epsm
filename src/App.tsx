@@ -1014,9 +1014,12 @@ function App() {
 
       const configButtonsRow = holderElement.children[0] as HTMLDivElement;
       
-      const beforeElem = holderElement.children[1].children[0].children[0].children[0].children[1];
-      const beforeElemParent = beforeElem.parentElement!;
-      beforeElemParent.insertBefore(configButtonsRow, beforeElem);
+      const beforeElem = holderElement.children[1].children[0].children[0].children[0].lastElementChild;
+      if(beforeElem) {
+        // beforeElem.className += " CORRUPTION-SETTINGS";
+        const beforeElemParent = beforeElem.parentElement!;
+        beforeElemParent.insertBefore(configButtonsRow, beforeElem);
+      }
 
       innerNewParent.append(elementToHide);
 
