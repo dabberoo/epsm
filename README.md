@@ -22,7 +22,7 @@
 If you already know how to make Edgeware++ packs (or you prefer to learn by experimenting), you can follow this guide to get started quickly:
 
 1. Use Edgeware++'s built-in **Pack Tool**. Instructions can be found in the [README for the Pack Tool](https://github.com/araten10/EdgewarePlusPlus/tree/main/pack_tool) to create a new working folder for your pack
-2. Open [**EPSM**]() and use it to generate a `pack.yml`
+2. Open [**EPSM**](https://dabberoo.github.io/epsm/) and use it to generate a `pack.yml`
 3. Replace your pack's default `pack.yml` with the one you generated with **EPSM**
 4. Put all your media files into the relevant folders within your pack's working folder
 5. Use the **Pack Tool** to compile your working folder into an **Edgeware++ Pack**
