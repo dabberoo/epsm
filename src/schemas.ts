@@ -21,7 +21,6 @@ const moodPropsSchema: RJSFSchema = {
     required: ["mood"],
     properties: {
         mood: { type: "string", title: "Mood" },
-        "popup-close": { type: "string", title: "Popup Close Label", default: "Close Popup", description: "Label for a Popup's 'close' button"},
         "max-clicks": { type: "number", title: "Max Clicks", default: 1, description: "Maximum number of clicks to close a Popup"},
         captions: {
             type: "array",
@@ -751,6 +750,7 @@ export const ewSchema: RJSFSchema = {
                                         "prompt-submit": { type: "string", title: "Prompt Submit Button", default: "I obey fake viruses!", description: "The label for a Prompt Popup's 'submit' button" },
                                         "prompt-min-length": { type: "number", title: "Prompt Min Length", default: 1, description: "Minimum number of times that the given prompt must be typed out"},
                                         "prompt-max-length": { type: "number", title: "Prompt Max Length", default: 1, description: "Maximum number of times that the given prompt must be typed out"},
+                                        "popup-close": { type: "string", title: "Popup Close Label", default: "Close Popup", description: "Label for a Popup's 'close' button"},
                                         ...moodPropsSchema.properties,
                                         mood: { type: "string", title: "Mood", default: "default", readOnly: true, description: "The default mood in your pack (always active)"},
                                     }
